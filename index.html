@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador</title>
+</head>
+<body>
+    <h1>Simulador Financiero</h1>
+
+    <!-- Simulador de Plazo Fijo -->
+    <h2>Simulador de Plazo Fijo</h2>
+    <div id="plazoFijoForm">
+        <label for="montoPlazoFijo">Monto a invertir:</label>
+        <input type="number" id="montoPlazoFijo" min="0">
+        <button id="aceptarMontoPlazoFijoBtn">Aceptar</button>
+        <div id="detallePlazoFijo" style="display: none;">
+            <p id="inicioPlazoFijo"></p>
+            <p id="vencimientoPlazoFijo"></p>
+            <p id="montoIngresado"></p>
+            <p id="interesesGenerados"></p>
+        </div>
+    </div>
+
+    <!-- Simulador de Préstamo Personal -->
+    <h2>Simulador de Préstamo Personal</h2>
+    <div id="prestamoPersonalForm">
+        <label for="montoPrestamoPersonal">Monto a pedir:</label>
+        <input type="number" id="montoPrestamoPersonal" min="0">
+        <button id="aceptarMontoPrestamoPersonalBtn">Aceptar</button>
+        <div id="detallePrestamoPersonal" style="display: none;">
+            <p id="plazoPrestamoPersonal"></p>
+            <p id="cuotaPrestamoPersonal"></p>
+            <p id="tasaInteresPrestamoPersonal"></p>
+        </div>
+    </div>
+
+    <!-- Cotización del Dólar -->
+    <h2>Cotización del Dólar en Argentina</h2>
+    <div id="cotizacionDolar">
+        <p id="resultadoDolar"></p>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/funciones.js"></script>
+    <script src="js/api.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        
+    </script>
+</body>
+</html>
